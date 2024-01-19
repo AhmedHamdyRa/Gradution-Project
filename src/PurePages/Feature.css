@@ -1,0 +1,555 @@
+.Feature {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+}
+
+.ServTypes1 a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.Serv {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.gg-drop {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(var(--ggs, 1));
+    width: 16px;
+    height: 16px;
+    border-radius: 0 100% 100% 100%;
+    box-shadow: inset 0 0 0 2px;
+    margin: 23px;
+    margin-right: 15px;
+}
+
+.gg-cloud {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 8px;
+    height: 2px;
+    background: currentColor;
+    margin-bottom: -20px;
+    margin: 33px;
+    margin-right: 30px;
+}
+
+.gg-cloud::after,
+.gg-cloud::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid;
+    box-sizing: border-box;
+    bottom: 0
+}
+
+.gg-cloud::before {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-right: 0;
+    left: -6px;
+    width: 7px;
+    height: 12px
+}
+
+.gg-cloud::after {
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    border-left-color: transparent;
+    right: -8px;
+    transform: rotate(-45deg)
+}
+
+.gg-live-photo {
+    transform: scale(var(--ggs, 1));
+    margin: 20px;
+    margin-right: 15px;
+}
+
+.gg-live-photo,
+.gg-live-photo::after {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: 2px dotted currentColor
+}
+
+.gg-live-photo::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid transparent;
+    top: 4px;
+    left: 4px;
+    box-shadow: 0 0 0 2px,inset 0 0 0 2px currentColor;
+}
+
+.gg-trash {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 10px;
+    height: 12px;
+    border: 2px solid transparent;
+    box-shadow:
+        0 0 0 2px,
+        inset -2px 0 0,
+        inset 2px 0 0;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-top: 4px;
+    margin: 25px;
+    margin-right: 20px;
+}
+
+.gg-trash::after,
+.gg-trash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-trash::after {
+    background: currentColor;
+    border-radius: 3px;
+    width: 16px;
+    height: 2px;
+    top: -4px;
+    left: -5px
+}
+
+.gg-trash::before {
+    width: 10px;
+    height: 4px;
+    border: 2px solid;
+    border-bottom: transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    top: -7px;
+    left: -2px
+}
+
+.gg-pentagon-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 10px;
+    height: 10px;
+    margin: 23px;
+    margin-right: 20px;
+}
+
+.gg-pentagon-down:before {
+    width: 51%
+}
+
+.gg-pentagon-down:after,
+.gg-pentagon-down:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%
+}
+
+.gg-pentagon-down:before {
+    left: -2px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: skew(0deg, 30deg)
+}
+
+.gg-pentagon-down:after {
+    right: -2px;
+    width: 50%;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    transform: skew(0deg, -30deg)
+}
+
+.gg-trees {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 16px;
+    height: 20px;
+    border-left: 4px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 10px solid transparent;
+    box-shadow: inset 2px 0 0, inset -2px 0 0;
+    margin: 18px;
+    margin-right: 20px;
+}
+
+.gg-trees::after,
+.gg-trees::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 10px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 8px;
+    left: -4px;
+    top: -10px
+}
+
+.gg-trees::after {
+    width: 8px;
+    height: 12px;
+    top: -6px;
+    left: 4px
+}
+
+
+.HeadServ {
+    margin-left: 35px;
+}
+
+.ServTypes1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    margin: 30px;
+}
+
+.ServTyp1,
+.ServTyp2,
+.ServTyp3,
+.ServTyp4,
+.ServTyp5,
+.ServTyp6,
+.ServTyp7,
+.ServTyp8 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 530px;
+    height: 300px;
+    border: 1px solid rgba(77, 73, 73, 0.685);
+    border-radius: 5%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ServTyp1 {
+    background-image: url(https://www.hdwallpapers.in/download/dark_body_of_water_4k_hd-HD.jpg);
+}
+
+.ServTyp2 {
+    background-image: url(https://wallpapercave.com/wp/wp9161658.jpg);
+}
+
+.ServTyp3 {
+    background-image: url(https://cdn.eteknix.com/wp-content/uploads/2016/01/airpollution.jpg);
+}
+
+.ServTyp4 {
+    background-image: url(https://images.pexels.com/photos/128421/pexels-photo-128421.jpeg?cs=srgb&dl=pexels-emmet-128421.jpg&fm=jpg);
+}
+
+.ServTyp5 {
+    background-image: url(https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/28215/aImg/51040/to-safeguard-biodiversity-44-percent-of-earth-s-land-requires-conservation-m.jpg);
+}
+
+.ServTyp6 {
+    background-image: url(https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?cs=srgb&dl=pexels-pixabay-235615.jpg&fm=jpg);
+}
+
+.ServTyp7 {
+    background-image: url(https://media.wired.com/photos/5f9c5663227dbb78ec30dacd/191:100/w_2292,h_1200,c_limit/Science_forests_1163948501.jpg);
+}
+
+.ServTyp8 {
+    background-image: url(https://c0.wallpaperflare.com/preview/242/839/810/nuclear-central-energy-radiation.jpg);
+}
+
+.add,
+.add2,
+.add3 {
+    position: absolute;
+    display: flex;
+}
+
+.add {
+    right: 45%;
+    top: 37%;
+    z-index: 1;
+}
+
+.add2 {
+    right: 35%;
+    top: 43%
+}
+
+.add3 {
+    right: 33%;
+    top: 37%
+}
+
+.ServTyp1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp1::before {
+    background-image: url(https://www.hdwallpapers.in/download/dark_body_of_water_4k_hd-HD.jpg);
+}
+
+.ServTyp1:hover {
+    color: white;
+}
+
+.ServTyp1:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}
+
+.ServTyp2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp2::before {
+    background-image: url(https://wallpapercave.com/wp/wp9161658.jpg);
+}
+
+.ServTyp2:hover {
+    color: white;
+}
+
+.ServTyp2:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}
+
+.ServTyp3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp3::before {
+    background-image: url(https://cdn.eteknix.com/wp-content/uploads/2016/01/airpollution.jpg);
+}
+
+.ServTyp3:hover {
+    color: white;
+}
+
+.ServTyp3:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}
+
+.ServTyp4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp4::before {
+    background-image: url(https://images.pexels.com/photos/128421/pexels-photo-128421.jpeg?cs=srgb&dl=pexels-emmet-128421.jpg&fm=jpg);
+}
+
+.ServTyp4:hover {
+    color: white;
+}
+
+.ServTyp4:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}
+
+.ServTyp5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp5::before {
+    background-image: url(https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/28215/aImg/51040/to-safeguard-biodiversity-44-percent-of-earth-s-land-requires-conservation-m.jpg);
+}
+
+.ServTyp5:hover {
+    color: white;
+}
+
+.ServTyp5:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}
+
+.ServTyp6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp6::before {
+    background-image: url(https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?cs=srgb&dl=pexels-pixabay-235615.jpg&fm=jpg);
+}
+
+.ServTyp6:hover {
+    color: white;
+}
+
+.ServTyp6:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}
+
+.ServTyp7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp7::before {
+    background-image: url(https://media.wired.com/photos/5f9c5663227dbb78ec30dacd/191:100/w_2292,h_1200,c_limit/Science_forests_1163948501.jpg);
+}
+
+.ServTyp7:hover {
+    color: white;
+}
+
+.ServTyp7:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}
+
+.ServTyp8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(5px);
+    border-radius: 5%;
+    /* Change the blur value to your desired amount */
+    opacity: 0;
+    /* set the opacity to 0 so the pseudo-element is hidden by default */
+    transition: opacity 0.2s ease-in-out;
+    /* add a transition to make the pseudo-element fade in smoothly */
+}
+
+.ServTyp8::before {
+    background-image: url(https://c0.wallpaperflare.com/preview/242/839/810/nuclear-central-energy-radiation.jpg);
+}
+
+.ServTyp8:hover {
+    color: white;
+}
+
+.ServTyp8:hover::before {
+    opacity: 1;
+    /* set the opacity to 1 on hover to make the pseudo-element visible */
+}

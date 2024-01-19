@@ -1,0 +1,415 @@
+.page {
+    width: 100%;
+    height: 89.3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqvdu0js2G4dg8qvwa0PrCJww-pj-8pk-0w&usqp=CAU);
+}
+
+.messages-cont {
+    margin: 10px 0px;
+    background-color: white;
+    box-shadow: 2px 2px 5px #444;
+    border-radius: 10px;
+    width: 80%;
+    height:450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    background-image: url(https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg);
+}
+
+.message {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #444;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    margin: 5px 0;
+}
+
+.message-right-cont {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    color:white;
+}
+
+.message-left-cont {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    
+}
+
+.message-right {
+    background-color: rgb(23, 153, 99);
+}
+
+.message-left {
+    background-color: white;
+}
+
+.controller-cont {
+    margin: 10px 0px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #444;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btnn {
+    width: 8%;
+    height: 40px;
+    border: none;
+    background-color: rgb(23, 153, 99);
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #444;
+    border-radius: 10px;
+}
+
+/* .PerfectScroll{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.PerfectScroll>.ps__thumb-y,
+.PerfectScroll>.ps__rail-y {
+    top: 0 !important;
+    height: 0 !important;
+} */
+
+/* Add CSS to style the select element */
+.select-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 8px 30px 8px 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add a custom arrow icon */
+  .select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666;
+  }
+  
+  /* Add styles for when the select is focused */
+  .select:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Add styles for when the select is hovered */
+  .select:hover {
+    background-color: #e6e6e6;
+  }
+
+  .toggle-container {
+    /* display: flex;
+    align-items: center; */
+    position: fixed ;
+    top:135px;
+    left: 145px;
+  }
+  
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #dddddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  .toggle-text-left {
+    position: absolute;
+    left: 5px;
+    color: #444;
+  }
+  
+  .toggle-text-right {
+    position: absolute;
+    right: 5px;
+    color: #444;
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    /* background-color: #ffffff; */
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider {
+    transform: translateX(30px);
+  }
+  
+
+  .btnnnn {
+    height: 4em;
+    width: 12em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0px solid black;
+    
+  }
+  
+  .wrapper {
+    height: 2em;
+    width: 8em;
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .text123 {
+    font-size: 17px;
+    z-index: 1;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color:rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
+    background-color: rgb(84, 184, 84);
+    transition: all 0.5s ease;
+  }
+  
+  .flower {
+    display: grid;
+    grid-template-columns: 1em 1em;
+    position: absolute;
+    transition: grid-template-columns 0.8s ease;
+  }
+  
+  .flower1 {
+    top: -12px;
+    left: -13px;
+    transform: rotate(5deg);
+  }
+  
+  .flower2 {
+    bottom: -5px;
+    left: 8px;
+    transform: rotate(35deg);
+  }
+  
+  .flower3 {
+    bottom: -15px;
+    transform: rotate(0deg);
+  }
+  
+  .flower4 {
+    top: -14px;
+    transform: rotate(15deg);
+  }
+  
+  .flower5 {
+    right: 11px;
+    top: -3px;
+    transform: rotate(25deg);
+  }
+  
+  .flower6 {
+    right: -15px;
+    bottom: -15px;
+    transform: rotate(30deg);
+  }
+  
+  .petal {
+    height: 1em;
+    width: 1em;
+    border-radius: 40% 70% / 7% 90%;
+    background: linear-gradient(rgb(84, 184, 84), rgba(84, 184, 84, 0.527));
+    border: 0.5px solid #96d1ec;
+    z-index: 0;
+    transition: width 0.8s ease, height 0.8s ease;
+  }
+  
+  .two {
+    transform: rotate(90deg);
+  }
+  
+  .three {
+    transform: rotate(270deg);
+  }
+  
+  .four {
+    transform: rotate(180deg);
+  }
+  
+  .btnnnn:hover .petal {
+    background: linear-gradient(rgb(84, 184, 84), rgba(84, 184, 84, 0.288));
+    border: 0.5px solid #96b4ec;
+  }
+  
+  .btnnnn:hover .flower {
+    grid-template-columns: 1.5em 1.5em;
+  }
+  
+  .btnnnn:hover .flower .petal {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
+  .btnnnn:hover .text {
+    background: rgb(255, 255, 255);
+  }
+  
+  .btnnnn:hover div.flower1 {
+    animation: 15s linear 0s normal none infinite running flower1;
+  }
+  
+  @keyframes flower1 {
+    0% {
+      transform: rotate(5deg);
+    }
+  
+    100% {
+      transform: rotate(365deg);
+    }
+  }
+  
+  .btnnnn:hover div.flower2 {
+    animation: 13s linear 1s normal none infinite running flower2;
+  }
+  
+  @keyframes flower2 {
+    0% {
+      transform: rotate(35deg);
+    }
+  
+    100% {
+      transform: rotate(-325deg);
+    }
+  }
+  
+  .btnnnn:hover div.flower3 {
+    animation: 16s linear 1s normal none infinite running flower3;
+  }
+  
+  @keyframes flower3 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .btnnnn:hover div.flower4 {
+    animation: 17s linear 1s normal none infinite running flower4;
+  }
+  
+  @keyframes flower4 {
+    0% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+      transform: rotate(375deg);
+    }
+  }
+  
+  .btnnnn:hover div.flower5 {
+    animation: 20s linear 1s normal none infinite running flower5;
+  }
+  
+  @keyframes flower5 {
+    0% {
+      transform: rotate(25deg);
+    }
+  
+    100% {
+      transform: rotate(-335deg);
+    }
+  }
+  
+  .btnnnn:hover div.flower6 {
+    animation: 15s linear 1s normal none infinite running flower6;
+  }
+  
+  @keyframes flower6 {
+    0% {
+      transform: rotate(30deg);
+    }
+  
+    100% {
+      transform: rotate(390deg);
+    }
+  }

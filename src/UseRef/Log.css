@@ -1,0 +1,20 @@
+.LOG{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 73%;
+    bottom: 15%;
+    border: 1px solid rgba(77, 73, 73, 0.685);
+    border-radius: 7%;
+    box-shadow:black;
+    padding: 40px;
+    background-color: whitesmoke ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.LOGIN{
+    width:100%;
+    height: 100vh; 
+    background-image: url("https://wallpapersmug.com/download/3840x2400/2a5029/big-leaf-plant-flora.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

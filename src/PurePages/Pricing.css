@@ -1,0 +1,262 @@
+.Pricing{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+.Serv {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+        .gg-repeat {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            box-shadow:
+                -2px -2px 0 0,
+                2px 2px 0 0;
+            width: 20px;
+            height: 15px;
+            margin: 23px;
+        }
+
+        .gg-repeat::after,
+        .gg-repeat::before {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent
+        }
+
+        .gg-repeat::before {
+            border-left: 5px solid;
+            top: -4px;
+            right: 0
+        }
+
+        .gg-repeat::after {
+            border-right: 5px solid;
+            bottom: -4px;
+            left: 0
+        }
+
+        .gg-folder-add {
+            background:
+                linear-gradient(to left,
+                    currentColor 10px, transparent 0) no-repeat center center/2px 6px;
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            width: 22px;
+            height: 16px;
+            border: 2px solid;
+            border-radius: 3px;
+            margin: 23px;
+        }
+
+        .gg-folder-add::after,
+        .gg-folder-add::before {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute
+        }
+
+        .gg-folder-add::before {
+            background: currentColor;
+            left: 6px;
+            width: 6px;
+            height: 2px;
+            top: 5px
+        }
+
+        .gg-folder-add::after {
+            width: 10px;
+            height: 4px;
+            border: 2px solid;
+            border-bottom: 0;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            top: -5px
+        }
+
+        .gg-search {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 16px;
+        height: 16px;
+        border: 2px solid;
+        border-radius: 100%;
+        margin-left: -4px;
+        margin-top: -4px;
+        margin: 23px;
+
+        }
+
+        .gg-search::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-radius: 3px;
+        width: 2px;
+        height: 8px;
+        background: currentColor;
+        transform: rotate(-45deg);
+        top: 10px;
+        left: 12px
+        } 
+
+    .gg-credit-card {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs, 1));
+        width: 24px;
+        height: 18px;
+        border: 2px solid;
+        border-radius: 4px;
+        margin:23px;
+    }
+
+    .gg-credit-card::after,
+    .gg-credit-card::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-radius: 3px;
+        width: 24px;
+        left: -2px;
+        height: 2px;
+        background: currentColor;
+        top: 9px
+    }
+
+    .gg-credit-card::before {
+        width: 6px;
+        left: 2px;
+        top: 3px
+    }
+
+    .gg-smart-home-boiler {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        transform: scale(var(--ggs, 1));
+        width: 14px;
+        height: 20px;
+        border: 2px solid;
+        border-radius: 2px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background:
+            linear-gradient(to left,
+                currentColor 14px,
+                transparent 0) no-repeat center 4px/14px 2px;
+        margin:20px;
+    }
+
+    .gg-smart-home-boiler::before {
+        content: "";
+        position: absolute;
+        display: block;
+        box-sizing: border-box;
+        width: 6px;
+        height: 3px;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        transform: skewX(20deg);
+        bottom: -4px;
+        left: 2px
+    }
+
+    .gg-list {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs, 1));
+        width: 22px;
+        height: 20px;
+        border: 2px solid;
+        border-radius: 3px;
+        margin: 20px;
+    }
+
+    .gg-list::after,
+    .gg-list::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: currentColor;
+        top: 3px;
+        left: 3px;
+        box-shadow:
+            0 4px 0,
+            0 8px 0
+    }
+
+    .gg-list::after {
+        border-radius: 3px;
+        width: 8px;
+        left: 7px
+    }
+
+
+.HeadServ {
+    margin-left: 35px;
+}
+
+.ServTypes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 30px;
+}
+
+.ServTyp {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 350px;
+    height: 200px;
+    border: 1px solid rgba(77, 73, 73, 0.685);
+    border-radius: 5%;
+    box-shadow: black;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    list-style: none;
+    text-decoration: none;
+}
+.ServTypes a {
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+
+.ServTyp:hover {
+    background-color: rgb(84, 184, 84);
+    transition: background-color 1s ease-out 35ms;
+    color: white;
+    cursor: pointer;
+}

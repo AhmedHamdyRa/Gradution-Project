@@ -1,0 +1,169 @@
+
+.home{
+    padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 35px;
+        margin-right: 35px;
+        
+}
+.homeHead{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.CardHead{
+    display: flex;
+}
+.SerCards{
+    margin-left: 45%;
+}
+.CardsCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:1155px;
+    height: 400px;
+} 
+.LawsCont{
+    margin-left: 20px;
+}
+.TopicCont ,.LawsCont{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.TopicContantt {
+    background-color: #f0f0f0;
+    width: 48%;
+    height: 48%;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    margin-top: 12px;
+    
+}
+.Contantt,.Contantt1,.Contantt2,.Contantt3,.Contantt4{
+    margin-top: 30%; 
+    display: flex;
+}
+.Contantt1{
+    margin-left:80px;
+}
+.Contantt2{
+    margin-left:85px;
+}
+.Contantt3{
+    margin-left:10px;
+}
+
+.Contantt4{
+    margin-left:30px;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: rgb(84, 184, 84);
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+}
+
+.card1 {
+    display: block;
+    position: relative;
+    max-width: 262px; 
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: rgb(84, 184, 84);
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(21);
+    }
+}
+
+.card1:hover {
+    transition: all 0.3s ease-out;
+    color: #f0f0f0;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    top: -8px;
+    border: 1px solid #cccccc;
+    
+}
+
+.Alll{
+    width:1155px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.Part1{
+    width:1155px;
+    height: 300px;
+    background-color: rgb(84, 184, 84);
+}
+.Part2{
+    width:1155px;
+    height: 300px;
+    background-color: white;
+}
+.RelLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.RelHeads{
+    margin: 20px;
+    margin-top:150px;
+    color: white;
+}
+.TopicContantt1 {
+    background-color: #f0f0f0;
+    width: 48%;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    margin-top: 12px;
+}
+.RelContant{
+    margin:20px
+}
+
+.RelLink a,.TopicCont a,.LawsCont a{
+    text-decoration: none;
+    color: black;
+}
